@@ -1,7 +1,8 @@
 defmodule PluralsightTweets.Scheduler do
-  def scheudule_file(schedule, file) do
+  def schedule_file(schedule, file) do
     Quantum.add_job(schedule, fn ->
-      IO.puts PluralsightTweets.FileReader.get_strings_to_tweet(file)
+      PluralsightTweets.FileReader.get_strings_to_tweet(file)
+      	|> PluralsightTweets.TweetServer.tweet
     end)
   end
 end
