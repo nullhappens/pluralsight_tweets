@@ -1,3 +1,5 @@
+[ ![Codeship Status for nullhappens/pluralsight_tweets](https://app.codeship.com/projects/8d8cce10-2ef2-0135-df82-4e01a2c86379/status?branch=master)](https://app.codeship.com/projects/225270)
+
 # PluralsightTweets
 
 **TODO: Add description**
