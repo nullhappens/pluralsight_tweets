@@ -1,20 +1,20 @@
 defmodule PluralsightTweets.TweetServer do
-	use GenServer
+  use GenServer
 
-	def start_link() do
-		GenServer.start_link(__MODULE__, :ok, name: :tweet_server)
-	end
+  def start_link do
+    GenServer.start_link(__MODULE__, :ok, name: :tweet_server)
+  end
 
-	def init(:ok) do
-		{:ok, %{}}
-	end
+  def init(:ok) do
+    {:ok, %{}}
+  end
 
-	def handle_cast({:tweet, tweet}, _) do
-		PluralsightTweets.Tweet.send(tweet)
-		{:noreply, %{}}
-	end
+  def handle_cast({:tweet, tweet}, _) do
+    PluralsightTweets.Tweet.send(tweet)
+    {:noreply, %{}}
+  end
 
-	def tweet(tweet) do
-		GenServer.cast(:tweet_server, {:tweet, tweet})
-	end
+  def tweet(tweet) do
+    GenServer.cast(:tweet_server, {:tweet, tweet})
+  end
 end

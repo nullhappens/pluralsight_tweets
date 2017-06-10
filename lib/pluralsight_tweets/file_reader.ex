@@ -3,7 +3,8 @@ defmodule PluralsightTweets.FileReader do
     File.read!(path)
       |> String.split("\n")
       |> Enum.map(&String.trim/1)
-      |> Enum.filter(fn str -> String.length(str) > 0 && String.length(str) <= 140 end)
+      |> Enum.filter(fn str -> String.length(str) > 0
+        && String.length(str) <= 140 end)
       |> case do
         [] -> ""
         x -> Enum.random(x)
