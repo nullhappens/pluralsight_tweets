@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/nullhappens/pluralsight_tweets.svg?branch=master)](https://travis-ci.org/nullhappens/pluralsight_tweets)
 [![Coverage Status](https://coveralls.io/repos/github/nullhappens/pluralsight_tweets/badge.svg?branch=master)](https://coveralls.io/github/nullhappens/pluralsight_tweets?branch=master)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4f57a5fe51db4ef2a43478a0e804420f)](https://www.codacy.com/app/dpineda/pluralsight_tweets?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nullhappens/pluralsight_tweets&amp;utm_campaign=Badge_Grade)
 
 # PluralsightTweets
 
