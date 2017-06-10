@@ -1,4 +1,4 @@
-[ ![Codeship Status for nullhappens/pluralsight_tweets](https://app.codeship.com/projects/8d8cce10-2ef2-0135-df82-4e01a2c86379/status?branch=master)](https://app.codeship.com/projects/225270)
+[![Build Status](https://travis-ci.org/nullhappens/pluralsight_tweets.svg?branch=master)](https://travis-ci.org/nullhappens/pluralsight_tweets)
 [![Coverage Status](https://coveralls.io/repos/github/nullhappens/pluralsight_tweets/badge.svg?branch=master)](https://coveralls.io/github/nullhappens/pluralsight_tweets?branch=master)
 
 # PluralsightTweets
