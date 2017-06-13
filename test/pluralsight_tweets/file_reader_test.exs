@@ -3,6 +3,8 @@ defmodule PluralsightTweets.FileReaderTest do
   import PluralsightTweets.FileReader
   import Mock
 
+  doctest PluralsightTweets.FileReader
+
   test "Passing a file should return a string" do
     with_mock File, [read!: fn(_) -> "randomTweets\n\n" end] do
       str = get_strings_to_tweet("non_existent.txt")
